@@ -12,7 +12,7 @@ alias rollback="bundle exec rails db:rollback"
 alias preptest="bundle exec rake db:test:prepare && RAILS_ENV=test bundle exec rake db:test:parallel:prepare"
 alias testsuite="RAILS_ENV=test bundle exec rake test:parallel | tee testrun.log"
 alias server="bundle exec rails server -p 4535 -b 0.0.0.0"
-alias dbconsole="bundle exec rails dbconsole
+alias dbconsole="bundle exec rails dbconsole"
 
 giff() {
  git diff master >& $1.diff
