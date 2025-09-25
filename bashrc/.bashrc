@@ -13,12 +13,12 @@ alias preptest="bundle exec rake db:test:prepare && RAILS_ENV=test bundle exec r
 alias testsuite="RAILS_ENV=test bundle exec rake test:parallel | tee testrun.log"
 alias server="bundle exec rails server -p 4535 -b 0.0.0.0"
 alias dbconsole="bundle exec rails dbconsole"
+alias p3="python3"
 
 giff() {
- git diff master >& $1.diff
+  git diff master >&$1.diff
 }
 
-singletest(){
- ruby -I test $1 -n $2
+singletest() {
+  ruby -I test $1 -n $2
 }
-
