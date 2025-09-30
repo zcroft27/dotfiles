@@ -22,3 +22,41 @@ giff() {
 singletest() {
   ruby -I test $1 -n $2
 }
+
+just_git_branch() {
+  echo $(git symbolic-ref --short HEAD 2>/dev/null)
+}
+
+parse_git_branch() {
+  gb=$(just_git_branch)
+  if [ -z "$gb" ]; then
+    echo $gb
+  else
+    echo " ($gb$(parse_git_tag)) "
+  fi
+}
+
+parse_git_tag() {
+  gt=$(git tag --points-at HEAD)
+  if [ -z "$gt" ]; then
+    echo $gt
+  else
+    echo ":$gt"
+  fi
+}
+
+#shorthand escape characters
+open="\[\033[01;38;5;"
+close="\[\e[0m\]"
+
+#colors
+green="028m\]"
+blue="020m\]"
+
+#building out modular pieces
+user="${open}${green}\u${close}"
+at="${open}${green}@${close}"
+host="${open}${green}\h${close}"
+current_path="${open}${blue}\w${close}"
+
+export PS1="${user}${at}${host}:${current_path}\$(parse_git_branch)\$ "
