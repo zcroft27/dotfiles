@@ -5,4 +5,6 @@ brew install stow
 cd ~/dotfiles
 stow nvim
 stow tmux
+cd brew
+brew bundle install
 ```
