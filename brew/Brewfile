@@ -36,6 +36,8 @@ brew "go-task/tap/go-task"
 brew "supabase/tap/supabase"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
+cask "docker"
+cask "iterm2"
 # Open-source code editor
 cask "visual-studio-code"
 vscode "caponetto.vscode-diff-viewer"
