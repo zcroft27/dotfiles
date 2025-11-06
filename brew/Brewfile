@@ -39,6 +39,7 @@ cask "ngrok"
 cask "docker"
 cask "iterm2"
 cask "postman"
+cask "spotify"
 # Open-source code editor
 cask "visual-studio-code"
 vscode "caponetto.vscode-diff-viewer"
