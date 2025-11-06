@@ -38,6 +38,7 @@ brew "supabase/tap/supabase"
 cask "ngrok"
 cask "docker"
 cask "iterm2"
+cask "postman"
 # Open-source code editor
 cask "visual-studio-code"
 vscode "caponetto.vscode-diff-viewer"
