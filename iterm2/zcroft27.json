@@ -182,6 +182,7 @@
     "Green Component" : 0.76959484815597534
   },
   "Window Type" : 0,
+  "Smart Cursor Color (Dark)" : true,
   "BM Growl" : true,
   "Prompt Before Closing 2" : false,
   "Command" : "",
