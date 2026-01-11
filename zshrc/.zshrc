@@ -14,6 +14,9 @@ alias testsuite="RAILS_ENV=test bundle exec rake test:parallel | tee testrun.log
 alias server="bundle exec rails server -p 4535 -b 0.0.0.0"
 alias dbconsole="bundle exec rails dbconsole"
 alias p3="python3"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 
 bindkey -e
 bindkey "^[[1;3C" forward-word
