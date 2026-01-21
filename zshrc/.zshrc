@@ -17,6 +17,7 @@ alias p3="python3"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+alias nv="nvim ."
 
 bindkey -e
 bindkey "^[[1;3C" forward-word
