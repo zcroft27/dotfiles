@@ -18,6 +18,8 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias nv="nvim ."
+alias goog='python3 /Users/zcroft/personal/cmd_google/cmd_google.py'
+alias fz='fzf'
 
 bindkey -e
 bindkey "^[[1;3C" forward-word
@@ -29,3 +31,6 @@ bindkey "^[[1;3D" backward-word
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
