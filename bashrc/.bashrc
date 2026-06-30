@@ -15,6 +15,7 @@ alias server="bundle exec rails server -p 4535 -b 0.0.0.0"
 alias dbconsole="bundle exec rails dbconsole"
 alias p3="python3"
 alias goog 'python /Users/zcroft/personal/cmd_google/cmd_google.py'
+alias transcribe="python3 /Users/zcroft/scripts/transcribe.py"
 
 giff() {
   git diff master >&$1.diff

@@ -19,6 +19,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias nv="nvim ."
 alias fz='fzf'
+alias transcribe="uv run ~/scripts/transcribe/transcribe.py"
 
 bindkey -e
 bindkey "^[[1;3C" forward-word
@@ -36,3 +37,5 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="$HOME/dotfiles/bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+. "$HOME/.local/bin/env"
