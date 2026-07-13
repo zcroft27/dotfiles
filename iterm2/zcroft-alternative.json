@@ -139,7 +139,7 @@
     "Red Component" : 0.12549019607843137
   },
   "Ambiguous Double Width" : false,
-  "Option Key Sends" : 0,
+  "Option Key Sends" : 2,
   "Ansi 3 Color" : {
     "Red Component" : 0.78058648109436035,
     "Color Space" : "sRGB",
@@ -298,10 +298,11 @@
   "Transparency" : 0,
   "Horizontal Spacing" : 1,
   "Cursor Color (Dark)" : {
-    "Green Component" : 0.5490196078431373,
-    "Blue Component" : 0.51372549019607838,
-    "Red Component" : 0.58823529411764708
+    "Green Component" : 1,
+    "Blue Component" : 1,
+    "Red Component" : 1
   },
+  "Smart Cursor Color (Dark)" : true,
   "Ansi 2 Color (Dark)" : {
     "Green Component" : 0.50588235294117645,
     "Blue Component" : 0.3843137254901961,

@@ -36,6 +36,11 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 # goog
 export PATH="$HOME/dotfiles/bin:$PATH"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(fzf --zsh)"
+bindkey '^[^?' backward-kill-word
+bindkey '^[r' fzf-history-widget
 
 . "$HOME/.local/bin/env"
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
