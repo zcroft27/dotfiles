@@ -4,3 +4,5 @@
 
 vim.keymap.set("n", "<leader>e", "<cmd>lua Snacks.explorer({ cwd = vim.fn.getcwd() })<CR>", { desc = "Explorer (cwd)" })
 vim.keymap.set("n", "<leader>E", "<cmd>lua Snacks.explorer()<CR>", { desc = "Explorer (root)" })
+
+vim.keymap.set("n", "<leader>cr", ':let @+ = expand("%:.")<CR>', { desc = "Copy relative path" })
